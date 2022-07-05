@@ -13,4 +13,9 @@ pub fn main() {
     for i in 0..notas.len() {
         println!("A nota {} é = {}", i + 1, notas[i]);
     }
+
+    println!("--endereço--");
+
+    let inteiro:usize = 0;
+    println!("acessando nota por inteiro {}", notas[inteiro]);
 }
