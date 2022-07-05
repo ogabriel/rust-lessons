@@ -3,6 +3,8 @@ pub fn main() {
 
    let mut contador:u8 = 0;
 
+   println!("--while--");
+
    while contador < 10 {
        contador += 1;
 
@@ -11,7 +13,7 @@ pub fn main() {
        println!("{} X {} = {}", multiplicador, contador, multiplicador * contador);
    }
 
-   println!("-----------");
+   println!("--loop--");
 
    contador = 0;
 
@@ -21,4 +23,10 @@ pub fn main() {
 
        if contador >= 10 { break; }
     }
+
+   println!("--for--");
+
+   for i in 1..=10 {
+       println!("{} X {} = {}", multiplicador, i, multiplicador * i);
+   }
 }
