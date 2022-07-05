@@ -4,6 +4,7 @@ pub fn main() {
     // v[4];
 
     // panic!("erro proposital");
+
     match result() {
         Ok(s) => println!("String de sucesso = {}", s),
         Err(numero) => println!("Codigo de erro = {}", numero)
