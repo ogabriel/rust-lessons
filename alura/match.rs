@@ -4,7 +4,7 @@ pub fn main() {
         "PHP" => "Web",
         "Kotlin" => "Android",
         "Python" => "Data Science",
-        _ => "Desconhecido"
+        _ => "Desconhecido",
     };
 
     println!("O proposito de {} é {}", linguagem, proposito);

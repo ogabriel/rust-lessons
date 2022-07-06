@@ -1,6 +1,6 @@
 pub fn main() {
     // let notas:[f32; 4] = [10f32, 8f32, 9.5, 6.0];
-    let notas:[f32; 4] = [6.5; 4];
+    let notas: [f32; 4] = [6.5; 4];
 
     println!("--interar--");
 
@@ -16,6 +16,6 @@ pub fn main() {
 
     println!("--endereço--");
 
-    let inteiro:usize = 0;
+    let inteiro: usize = 0;
     println!("acessando nota por inteiro {}", notas[inteiro]);
 }

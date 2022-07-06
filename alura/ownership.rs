@@ -8,11 +8,11 @@ pub fn main() {
     println!("{}", uma_string);
 }
 
-fn roubar(string:String) {
+fn roubar(string: String) {
     println!("{}", string);
 }
 
-fn emprestar(string:&mut String) {
+fn emprestar(string: &mut String) {
     string.push_str(" Oliveira");
     println!("{}", string);
 }

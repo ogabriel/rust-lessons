@@ -1,7 +1,10 @@
 pub fn main() {
-    println!("É fim de semana: {}", eh_fim_de_semana(DiaDaSemana::Domingo));
+    println!(
+        "É fim de semana: {}",
+        eh_fim_de_semana(DiaDaSemana::Domingo)
+    );
 
-    let dia:DiaDaSemana = DiaDaSemana::Sexta;
+    let dia: DiaDaSemana = DiaDaSemana::Sexta;
 }
 
 enum DiaDaSemana {
@@ -14,10 +17,10 @@ enum DiaDaSemana {
     Sabado,
 }
 
-fn eh_fim_de_semana(dia_da_semana:DiaDaSemana) -> bool {
+fn eh_fim_de_semana(dia_da_semana: DiaDaSemana) -> bool {
     match dia_da_semana {
-        DiaDaSemana::Domingo | DiaDaSemana::Sabado  => true,
-        _ => false
+        DiaDaSemana::Domingo | DiaDaSemana::Sabado => true,
+        _ => false,
     }
 }
 

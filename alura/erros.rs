@@ -7,7 +7,7 @@ pub fn main() {
 
     match result() {
         Ok(s) => println!("String de sucesso = {}", s),
-        Err(numero) => println!("Codigo de erro = {}", numero)
+        Err(numero) => println!("Codigo de erro = {}", numero),
     }
 }
 
