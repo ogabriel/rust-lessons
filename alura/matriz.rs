@@ -4,7 +4,7 @@ pub fn main() {
         [1.3, 0.3, 1.4]
     ];
 
-    for linha in &matriz {
+    for linha in matriz {
         for item in linha {
             println!("Item = {}", item);
         }

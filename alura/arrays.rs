@@ -4,7 +4,7 @@ pub fn main() {
 
     println!("--interar--");
 
-    for nota in &notas {
+    for nota in notas {
         println!("A nota é = {}", nota);
     }
 
