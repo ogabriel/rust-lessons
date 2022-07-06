@@ -9,7 +9,19 @@ pub fn main() {
 
     // notas.push(8.1);
 
-    let mut notas: Vec<f32> = vec![10.0, 5.5, 7.1, 8.1];
+    // let mut notas: Vec<f32> = vec![10.0, 5.5, 7.1];
+
+    let mut notas: Vec<f32> = Vec::with_capacity(4);
+
+    notas.push(10.0);
+    notas.push(5.4);
+    notas.push(7.1);
+
+    println!("Capacidade = {}", notas.capacity());
+
+    notas.push(8.1);
+
+    println!("Capacidade = {}", notas.capacity());
 
     println!("{:?}", notas);
     println!("Nota 1 = {}", notas[0]);
@@ -30,7 +42,7 @@ pub fn main() {
     //     println!("Valor removido = {}", nota);
     // }
 
-    for nota in notas {
+    for nota in &notas {
         println!("Valor = {}", nota);
     }
 
