@@ -12,4 +12,12 @@ pub fn main() {
     let notas: Vec<f32> = vec![10.0, 5.5, 7.1, 8.1];
 
     println!("{:?}", notas);
+    println!("Nota 1 = {}", notas[0]);
+    println!(
+        "Nota 8 = {}",
+        match notas.get(7) {
+            Some(&n) => n,
+            None => 0.0,
+        }
+    );
 }
