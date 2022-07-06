@@ -9,15 +9,30 @@ pub fn main() {
 
     // notas.push(8.1);
 
-    let notas: Vec<f32> = vec![10.0, 5.5, 7.1, 8.1];
+    let mut notas: Vec<f32> = vec![10.0, 5.5, 7.1, 8.1];
 
     println!("{:?}", notas);
     println!("Nota 1 = {}", notas[0]);
     println!(
         "Nota 8 = {}",
         match notas.get(7) {
-            Some(&n) => n,
+            Some(n) => *n,
             None => 0.0,
         }
     );
+
+    // if let Some(nota) = notas.pop() {
+    //     println!("Ultimo valor {}", nota);
+    //     println!("{:?}", notas);
+    // }
+
+    // while let Some(nota) = notas.pop() {
+    //     println!("Valor removido = {}", nota);
+    // }
+
+    for nota in notas {
+        println!("Valor = {}", nota);
+    }
+
+    println!("{:?}", notas);
 }
