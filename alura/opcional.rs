@@ -7,9 +7,13 @@ pub fn main() {
     }
 
     println!("{:?}", conteudo_do_arquivo);
+
+    if let Some(valor) = conteudo_do_arquivo {
+        println!("{valor}");
+    }
 }
 
 fn ler_arquivo(caminho_arquivo: String) -> Option<String> {
-    // Some(String::from("Conteudo do arquivo"))
-    None
+    Some(String::from("Conteudo do arquivo"))
+    // None
 }
