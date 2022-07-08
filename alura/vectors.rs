@@ -17,11 +17,11 @@ pub fn main() {
     notas.push(5.4);
     notas.push(7.1);
 
-    println!("Capacidade = {}", notas.capacity());
+    println!("Capacidade = {}, Tamanho = {}", notas.capacity(), notas.len());
 
     notas.push(8.1);
 
-    println!("Capacidade = {}", notas.capacity());
+    println!("Capacidade = {}, Tamanho = {}", notas.capacity(), notas.len());
 
     println!("{:?}", notas);
     println!("Nota 1 = {}", notas[0]);
